@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="client.js"></script>
+    </head>
+    <body id="main">
+        <form >
+            <p>Id: <input type="number" name="id" size="4"></p>
+            <p>Descripcion: <input type="text" name="description" size="40"></p>
+            <p>Marca: <input type="text" name="brand" size="40"></p>
+            <p>Category: <select name="category" >
+                <option value="Camisetas">Camisetas</option>
+                <option value="Sudaderas">Sudaderas</option>
+                <option value="Jeans">Jeans</option>
+                <option value="Abrigos">Abrigos</option>
+                <option value="Camisas">Camisas</option>
+                <option value="Pantalones">Pantalones</option>
+                <option value="Ropa_Interior">Ropa Interior</option>
+                <option value="Chaquetas">Chaquetas</option>
+            </select></p>
+            <p>Color: <select name="color" >
+                <option value="Negro">Negro</option>
+                <option value="Azul">Azul</option>
+                <option value="Rolo">Rolo</option>
+                <option value="Amarillo">Amarillo</option>
+                <option value="Cafe">Cafe</option>
+                <option value="Verde">Verde</option>
+                <option value="Rosa">Rosa</option>
+                <option value="Blanco">Blanco</option>
+            </select></p>
+            <p>Talla: <input type="text" name="size" size="4"></p>
+            <p>
+              <input type="submit" value="Enviar">
+              <input type="reset" value="Borrar">
+            </p>
+          </form>
+        <button onclick="getList()">Get</button>
+        <button id="buttonJquery">Get Jquery</button>
+    </body>
+</html>
